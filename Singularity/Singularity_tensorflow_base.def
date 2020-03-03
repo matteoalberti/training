@@ -1,0 +1,17 @@
+
+Bootstrap: docker
+From: nvcr.io/nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
+
+%post
+    apt-get -y update
+    apt-get install -y --no-install-recommends     ca-certificates     build-essential     git     python     python-pip     python-setuptools
+    
+    apt-get -y install vim 
+
+    pip install --no-deps tf-nightly-gpu
+    pip install --no-deps numpy
+
+
+
+
+    
