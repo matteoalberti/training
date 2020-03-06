@@ -1,6 +1,6 @@
 import sys
 import argparse
-from email.policy import default
+
 
 singularity_base = """
 Bootstrap: docker

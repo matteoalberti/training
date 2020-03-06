@@ -11,4 +11,4 @@ if [[ ! -e $dir ]]; then
     mkdir $dir
 fi
 
-sudo singularity build $dir/Singularity_tensorflow_base.sif Singularity_tensorflow_base.def
+sudo singularity build $dir/STF.sif Singularity_tensorflow_base.def
